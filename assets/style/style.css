@@ -1,0 +1,151 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "header header"
+    "aside grid-item"
+    "footer footer";
+  color: #f2f2f2;
+}
+
+header {
+  grid-area: header;
+  background-color: #77a632;
+  text-align: center;
+  height: 12vh;
+  font-family: "Baskervville", serif;
+}
+
+aside {
+  grid-area: aside;
+  background: rgba(191, 132, 126, 0.08);
+
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  color: #3a4e1b;
+  font-family: "Crimson Pro", serif;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  align-items: center;
+}
+h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+section {
+  grid-area: grid-item;
+  background-color: #f2f2f2;
+  width: 85vw;
+  box-shadow: 10px 0px 4px 0px rgba(144, 117, 117, 0.25) inset;
+  background-image: url(../img/fondo.png);
+}
+footer {
+  grid-area: footer;
+  height: 5vh;
+  color: #3a4e1b;
+  text-align: center;
+}
+.subtitle {
+  align-self: center;
+  display: flex;
+  height: 8%;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  font-family: "Crimson Pro", serif;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+}
+li {
+  margin: 2% 0% 2% 10%;
+}
+.grid-items {
+  display: grid;
+  grid-template-areas:
+    "item-1 item-2 item-3"
+    "item-4 item-5 item-6";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+.item-1 {
+  grid-area: item-1;
+}
+.item-2 {
+  grid-area: item-2;
+}
+.item-3 {
+  grid-area: item-3;
+}
+.item-4 {
+  grid-area: item-4;
+}
+button {
+  background-color: #5f7144;
+
+  color: beige;
+  height: 8vh;
+  font-family: "Crimson Pro", serif;
+  font-size: 20px;
+  border: 1px solid #6b7d4fa8;
+  width: 9.063rem;
+}
+button:hover {
+  background-color: #9bb673;
+}
+
+.grid-items .img {
+  border-radius: 2% 2% 0% 0%;
+  width: auto;
+}
+.grid-items img{
+width: inherit;
+}
+
+li:hover {
+  color: #597c24;
+  text-shadow: 2px 2px 8px #0d420027;
+}
+.item-4,
+.item-3,
+.item-2,
+.item-1 {
+  margin: 5% 0%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbe7c8a8;
+  width: 75%;
+  border-radius: 2% 2% 0% 0%;
+  color: #3a4e1b;
+  background-color: white;
+  box-shadow: 10px 5px 5px #adadad3b;
+}
+.img {
+  align-self: center;
+  background-color: white;
+}
+.par {
+  border-top: solid 1px #dbe7c8a8;
+  height: 4.75rem;
+  text-align: center;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
